@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import homePage from '../assets/HomePage.png'
+import homePage from '../assets/HomePage.png';
+import {Link} from 'react-router-dom';
 
 export default class  extends Component {
     render() {
@@ -11,6 +12,7 @@ export default class  extends Component {
                    <img className='project-preview' src={homePage} alt='home page' />
                    <p className='text about' >Technologies Used: React, Redux, Node, Express, Chart.js, Stripe, and Nodemailer.</p>
                     <a className='text' id='margin-link' href='https://personal.natestone.info'target='_blank' rel="noopener noreferrer">Click here to see the site!</a>
+                    <Link to='/' className='text'>Home</Link>
                 </div> 
             </div> 
         )
