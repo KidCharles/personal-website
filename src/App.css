@@ -1,0 +1,225 @@
+.App{
+  background: #8BC1D3;
+  min-height: 100vh;
+
+}
+.section{
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.text{
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.nav{
+  position: fixed;
+  bottom: 0;
+  height:40px;
+  width: 100%;
+  background: #343b4e75;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-option{
+  width: 200px; 
+  text-align: center;
+}
+.label{
+  font-size: 3.5em;
+  font-weight: bolder;
+  letter-spacing: 2vw;
+  width: 100%;
+  margin: 0;
+  padding-left: 4vw; 
+  box-sizing: border-box;
+
+}
+.title{
+  font-size: 1.5em;
+  margin:15vh 4vw 50vh 4vw;
+}
+.about{
+  background: #1f232e6c;
+  width: 100%;
+  padding: 3vw;
+  box-sizing: border-box;
+}
+#home{
+  padding: 20vw 0; 
+  height: 130vh;
+}
+#contact{
+  height: 100vh;
+ 
+}
+#skills{
+  padding-top: 8vh;
+  box-sizing: border-box;
+  background: url('https://images.unsplash.com/photo-1526565173698-54b743f4174b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22e82087f2b7d5958a408ae374dcadf8&auto=format&fit=crop&w=2850&q=80') center no-repeat;
+  background-attachment: fixed;
+  height: 120vh;
+}
+#projects{
+  height: 95vh;
+}
+.project-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+.project{
+  background: #1f232e6c;
+  border-radius: 50%;
+  height: 20vh;
+  width: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8vh 0;
+  font-weight: bold;
+}
+.skill-icon{
+  height: 13vh;
+  margin: 3vh;
+}
+.contact-info{
+  width: 100%;
+}
+.mailer-container{
+  display: flex;
+  flex-direction: column;
+  padding: 12vw;
+}
+.input{
+  margin-bottom: 3vh;
+}
+.small{
+  height: 4vh;
+}
+.message{
+  height: 10vh;
+}
+.btn{
+  background: rgb(31, 33, 43);
+  height: 6vh;
+  border: none;
+  border-radius: 4px; 
+}
+.contact-info{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10vw;
+}
+.pic-me{
+  height: 20vh;
+  border-radius: 50%;
+}
+.contact-link{
+  margin-left: 8vw;
+  display: inline;
+}
+#email{
+  width: 100%;
+  text-align: center;
+  margin-top: 3vh;
+  
+}
+
+@media(min-width:600px){
+  .App{
+    background: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aecdd0f4ea59dfb2d0622cab6e3c3901&auto=format&fit=crop&w=1955&q=80') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .section{
+    padding: 0 12.5vw;
+  }
+  #home{
+    padding: 20vh 12.5vw 0 12.5vw;
+  }
+  #contact{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skills{
+    background-size: cover;
+
+  }
+ 
+
+  .title{
+    margin:15vh 4vw 30vh 4vw;
+  }
+  .nav{
+    top: 0;
+    background: none;
+    box-shadow: 0 1px 9px rgba(49, 49, 49, 0.438);
+  }
+  .label{
+    font-size: 7em;
+  }
+  .about{
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  .skills{
+    margin-bottom: 12vh;
+  }
+  .skill-icon{
+    margin: 0 0 24vh 1.5vw;
+  }
+  .skillz{
+    padding-left: 25px;
+  }
+  .mailer-container{
+    width: 35%;
+    padding: 0;
+    margin-right: 15vw
+  }
+  .contact-info{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-link{
+    margin-left: 8px;
+  }
+  #email{
+    text-align: left;
+    font-size: 3vh;
+  }
+  .pic-me{
+    width: 20vh;
+  }
+  .project{
+    background: #1f232eda;
+    transition: 250ms
+  }
+  .project:hover{
+    transform: scale(1.2);
+    background: #1f232e60;
+  }
+  
+  
+  .nav-option:hover{
+    cursor: pointer;
+    color: lightgray;
+  }
+  .footer-img{
+    height: 9vh;
+    padding-left: 3vw;
+  }
+
+}

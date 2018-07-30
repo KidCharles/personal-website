@@ -1,0 +1,24 @@
+
+#project-info{
+    margin-top: 6vh;
+}
+.project-preview{
+    width: 80vw;
+    margin: 7vh 10vw 7vh 10vw; 
+}
+#margin-link{
+    margin: 10vh 0;
+}
+
+@media(min-width:600px){
+    .project-preview{
+        box-shadow: 0 1px 9px rgba(49, 49, 49, 0.438);
+        width: 75vw;
+
+    }
+    .projects-container{
+        padding: 5vh;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}

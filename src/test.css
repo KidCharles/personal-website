@@ -1,0 +1,279 @@
+.App{
+    background: #8BC1D3
+   
+  }
+  
+  .nav{
+    position: fixed;
+    bottom: 0;
+    height:24px;
+    width: 100%;
+    background: #343b4e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  .home{
+    height: 150vh;
+    padding-top: 25vh;
+  }
+  .skills{
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1526565173698-54b743f4174b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22e82087f2b7d5958a408ae374dcadf8&auto=format&fit=crop&w=2850&q=80') center no-repeat;
+    background-attachment: fixed;
+   
+  }
+  .text{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+  }
+  .h1{
+   
+    font-weight: 900;
+    font-size: 55px;
+    letter-spacing: 15px;
+    padding-left: 5vw;
+  }
+  #title{
+    width: 100%;
+    height: 50vh;
+    padding-left: 10vw;
+  }
+  .a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #949daa;
+    box-shadow: 0px 1px 25px 4px rgba(47,46,46,0.3);
+  
+  }
+  .intro{
+  
+    box-sizing: border-box;
+    height: 40vh;
+  }
+  .about{
+    background: #343b4e;
+    box-shadow: 0px 1px 25px 4px rgba(47,46,46,0.3);
+    font-size: 20px;
+    line-height: 5vh;
+    padding: 8px 0;
+  }
+  .profile-pic{
+    height: 20vh;
+    border-radius: 50%;
+  }
+  .mobile-hidden{
+    display: none;
+  }
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-info{
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .p{
+  display: inline;
+  }
+  #email{
+    width: 100%
+  }
+  .pic-me{
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  
+  @media(min-width:700px){
+    
+  .App{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('https://images.unsplash.com/photo-1486072889922-9aea1fc0a34d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3d58a9fd9b758f11c7efbcfe4080743&auto=format&fit=crop&w=1500&q=80') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  
+  
+  .h1{
+    font-weight: 900;
+    font-size: 75px;
+    letter-spacing: 15px;
+    padding: 0
+  }
+  #title{
+    font-size: 18px;
+    margin-top: 45px;
+  }
+  .nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    padding-top: 15px;
+    box-shadow: 0 1px 9px rgba(49, 49, 49, 0.438);
+    box-sizing: border-box;
+    background: none;
+    bottom: 95vh;
+  }
+  .a{
+    font-family: 'Roboto', sans-serif;
+    margin-left: calc((100% - 1080px) * 0.5);
+    text-decoration: none;
+    color: #949daa
+  }
+  
+  
+  .section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  
+  .about{
+    font-size: 20px;
+    line-height: 40px;
+    box-shadow: none;
+  }
+  .skills{
+    margin-top: 150px;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1526565173698-54b743f4174b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22e82087f2b7d5958a408ae374dcadf8&auto=format&fit=crop&w=2850&q=80') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .label{
+    margin-left: 12.5vw;
+    margin-top: 15px;
+    width: 75vw;
+  }
+  .intro{
+    height: 300px;
+    width: 75vw;
+    background: #343b4e;
+    box-shadow: 0px 1px 25px 4px rgba(47,46,46,0.3);
+    padding: 60px 100px;
+  }
+  .image-container{
+    height: 400px;
+  }
+  #contact{
+    height: 500px;
+  
+    margin: 40px 0 80px;
+    display: flex;
+    padding: 35px 20px 20px 20px;
+  
+  
+  }
+  .mobile-hidden{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30vw;
+  }
+  .input{
+    margin: 8px;
+    border: none;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  input{
+    height: 35px;
+  
+  }
+  .name{
+    width: 200px;
+  }
+  .subject{
+    width:416px;
+  }
+  textarea{
+    height: 200px;
+  }
+  button{
+    background: rgb(92, 208, 243);
+    height: 45px;
+  }
+  .p{
+    width: 450px;
+    word-wrap: break-word;
+  
+  }
+  .contact-info{
+    box-sizing: border-box;
+    padding: 40px 40px 40px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 37vw;
+    flex-direction: column;
+  
+    
+  }
+  
+  .image-container{
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #portfolio{
+    margin-top: 20px;
+    height: 600px;
+  }
+  .profile-pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .portfolio-pic{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 1px 25px 4px rgba(47,46,46,0.3);
+    border-radius: 4px;
+    background: url('./assets/studio.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .contact{
+    margin-left: 12.5vw;
+    margin-top: 15px;
+    width: 75vw;
+  }
+  .hover-div{
+    display: none;
+  }
+  .contact-a{
+    height: 70px;
+    display: flex;
+  }
+  .pic-me{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  #email{
+    display: flex;
+  }
+  
+  }
