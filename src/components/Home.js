@@ -71,7 +71,7 @@ class Home extends Component {
           <h1 className='label text'>NATHAN <br />STONE.</h1>
           <p className='title text' >WEB DEVELOPER</p>
           <div className='intro'>
-            <p className='text about'>Hi! I'm a web Developer specializing in React and Node. I am passionate about solving problems, learning new technologies, and improving myself every day! If I'm not working behind a computer, you can find me discovering new food, relaxing with my wife, or playing my guitar.</p>
+            <p className='text about'>Hi! I'm a Web Developer specializing in React and Node. I am passionate about solving problems, learning new technologies, and improving myself every day! If I'm not working behind a computer, you can find me discovering new food, relaxing with my wife, or playing my guitar.</p>
           </div>
         </div>
         <div className='section' id='skills' ref='skills'>
