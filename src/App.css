@@ -56,8 +56,7 @@ a{
   height: 130vh;
 }
 #contact{
-  height: 100vh;
- 
+  height: 60vh; 
 }
 #skills{
   padding-top: 8vh;
@@ -94,6 +93,7 @@ a{
 }
 .contact-info{
   width: 100%;
+  margin-top: 6vh;
 }
 .mailer-container{
   display: flex;
@@ -150,6 +150,8 @@ a{
   #contact{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    height: 60vh;
   }
   #skills{
     background-size: cover;

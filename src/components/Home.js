@@ -18,14 +18,7 @@ import pic from '../assets/pic.jpg';
 class Home extends Component {
   constructor() {
     super();
-    this.state = {
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-      navClicked: false
-    }
-    this.submitEmail = this.submitEmail.bind(this)
+    
   }
   handleScrollToElement(e) {
     const tesNode = ReactDOM.findDOMNode(this.refs[e])
@@ -33,29 +26,7 @@ class Home extends Component {
 
 
   }
-  submitEmail() {
-    let { name, email, subject, message } = this.state;
-    if (name && email && subject && message) {
-      axios.post('/api/sendEmail', { name, email, subject, message }).then(res => {
-        if (res.status === 200) {
-          alert('Message Sent!')
-          this.setState({
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-          })
-        } else {
-          alert('Something went wrong. Please try again')
-        }
-
-
-      })
-    } else {
-      alert('All fields are required')
-    }
-
-  }
+  
   render() {
     return (
       <div className="App">
@@ -103,13 +74,7 @@ class Home extends Component {
 
         <div className='section' id='contact' ref='contact'>
           <h1 className='label text'>Contact</h1>
-          <div className='mailer-container'>
-            <input type='text' className='small input' placeholder='Name' onChange={(e) => this.setState({ name: e.target.value })} />
-            <input type='text' className='small input' placeholder='Email' onChange={(e) => this.setState({ email: e.target.value })} />
-            <input type='text' className='small input' placeholder='Subject' onChange={(e) => this.setState({ subject: e.target.value })} />
-            <textarea placeholder='Message' className='message input ' onChange={(e) => this.setState({ message: e.target.value })}></textarea>
-            <button onClick={this.submitEmail} className='btn text'>Send</button>
-          </div>
+         
           <div className='contact-info'>
 
             <a className='contact-link' href='https://www.linkedin.com/in/nathanstone96/' target='_blank' rel="noopener noreferrer">
