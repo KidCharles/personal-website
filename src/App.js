@@ -5,7 +5,7 @@ import './App.css'
 import './Project.css'
 import Home from './components/Home';
 import Kahoot from './components/Kahoot';
-import StudioSupplier from './components/StudioSupplier';
+import Ww from './components/WayfaringWorld.js';
 
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/kwizz' component={Kahoot} />
-        <Route path='/studio' component={StudioSupplier} />
+        <Route path='/studio' component={Ww} />
       </Switch>
         </div>
     );

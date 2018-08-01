@@ -1,7 +1,8 @@
 .App{
-  background: #8BC1D3;
+  background: rgb(236, 236, 236);
   min-height: 100vh;
-
+  --maintext: 'Roboto', sans-serif;
+  --secondarytext:'Roboto Condensed', sans-serif;
 }
 .section{
   width: 100%;
@@ -9,8 +10,9 @@
 
 }
 .text{
-  font-family: 'Roboto', sans-serif;
-  color: #FFFFFF;
+  font-family: var(--secondarytext);
+  color: rgba(34, 34, 34, 0.664);
+  letter-spacing: .1em;
 }
 a{
   text-decoration: none;
@@ -22,7 +24,7 @@ a{
   bottom: 0;
   height:40px;
   width: 100%;
-  background: #343b4e75;
+  background: #fffffff6;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,41 +34,55 @@ a{
   text-align: center;
 }
 .label{
-  font-size: 3.5em;
+  font-family: var(--maintext);
+  font-size: 5em;
   font-weight: bolder;
-  letter-spacing: 2vw;
+  letter-spacing: 1.5vw;
   width: 100%;
   margin: 0;
-  padding-left: 4vw; 
+  padding-left: 3vw; 
   box-sizing: border-box;
-
 }
 .title{
+  font-family: var(--secondarytext);
   font-size: 1.5em;
-  margin:15vh 4vw 50vh 4vw;
+  margin:15vh 4vw 35vh 4vw;
+  border-radius: 4px;
 }
+#ch{
+  font-size: 11em;
+
+}
+.charles{
+  padding-left: 1.5em; 
+}
+
 .about{
-  background: #1f232e6c;
+  background: #3636361f;
   width: 100%;
+  height: 100vh;
   padding: 3vw;
   box-sizing: border-box;
+  border-radius: 2px;
 }
 #home{
   padding: 20vw 0; 
-  height: 130vh;
+  height: 145vh;
 }
 #contact{
-  height: 60vh; 
+  height: 100vh; 
+  background: url('https://images.unsplash.com/photo-1496286069291-1a0c6b13f4ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=088518efbd32c4dfaf1fe6a5f603975c&auto=format&fit=crop&w=1950&q=80') center no-repeat;
 }
 #skills{
   padding-top: 8vh;
   box-sizing: border-box;
-  background: url('https://images.unsplash.com/photo-1495305730668-3d13ae2a3250?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c52e66858494576058b6961baacaf2da&auto=format&fit=crop&w=1950&q=80') center no-repeat;
+  background: url('https://images.unsplash.com/photo-1496286069291-1a0c6b13f4ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=088518efbd32c4dfaf1fe6a5f603975c&auto=format&fit=crop&w=1950&q=80') center no-repeat;
   background-attachment: fixed;
-  height: 120vh;
+  height: 135vh;
 }
 #projects{
-  height: 95vh;
+  height: 90vh;
+  padding-top: 8vh;
 }
 .project-container{
   display: flex;
@@ -77,19 +93,22 @@ a{
   width: 100%;
 }
 .project{
-  background: #1f232e6c;
+  background: #3636363a;
   border-radius: 50%;
   height: 20vh;
   width: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8vh 0;
+  margin: 7.5vh 0;
   font-weight: bold;
 }
 .skill-icon{
   height: 13vh;
   margin: 3vh;
+}
+.skillz{
+  text-align: center;
 }
 .contact-info{
   width: 100%;
@@ -110,7 +129,7 @@ a{
   height: 10vh;
 }
 .btn{
-  background: rgb(31, 33, 43);
+  background: rgba(49, 49, 49, 0.137);
   height: 6vh;
   border: none;
   border-radius: 4px; 
@@ -118,11 +137,11 @@ a{
 .contact-info{
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10vw;
+  /* padding: 0 10vw; */
 }
 .pic-me{
-  height: 20vh;
-  border-radius: 50%;
+  height: 220px;
+  padding-top: 2em;
 }
 .contact-link{
   margin-left: 8vw;
@@ -132,12 +151,12 @@ a{
   width: 100%;
   text-align: center;
   margin-top: 3vh;
-  
+  margin-bottom: 200px;
 }
 
 @media(min-width:600px){
   .App{
-    background: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aecdd0f4ea59dfb2d0622cab6e3c3901&auto=format&fit=crop&w=1955&q=80') center no-repeat;
+    background: url('https://images.unsplash.com/photo-1496286069291-1a0c6b13f4ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=088518efbd32c4dfaf1fe6a5f603975c&auto=format&fit=crop&w=1950&q=80') center no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
@@ -150,22 +169,36 @@ a{
   #contact{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 60vh;
+    /* justify-content: center; */
+    /* height: 60vh; */
+    background: none;
   }
   #skills{
+    background: url('https://images.unsplash.com/photo-1490131784822-b4626a8ec96a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd8c16458435813a798bc9de0435ad3d&auto=format&fit=crop&w=1950&q=80') center  no-repeat;
+    /* background: url('https://images.unsplash.com/photo-1496060169243-453fde45943b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fccad28a7a0268a1ff16752f6e09ced9&auto=format&fit=crop&w=1944&q=80')  no-repeat; */
+    /* background: url('https://images.unsplash.com/photo-1524435294942-f69361a3c3e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=78a7db887b5ecec1ba9697f6618e13dc&auto=format&fit=crop&w=1300&q=80')  no-repeat; */
+    /* background: url('https://images.unsplash.com/photo-1517259251634-5b2a138cfecc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c01752f027bc94e017c654e1584b6317&auto=format&fit=crop&w=1350&q=80') center no-repeat; */
     background-size: cover;
-
   }
  
-
+  #ch{
+    font-size: 12em;
+  }
+  .charles{
+    padding-left: 4vw;
+    font-size: 1.5em;
+  }
   .title{
-    margin:15vh 4vw 30vh 4vw;
+    margin:21vh 4vw 30vh 4vw;
   }
   .nav{
     top: 0;
-    background: none;
-    box-shadow: 0 1px 9px rgba(49, 49, 49, 0.438);
+    background: rgba(255, 255, 255, 0.322);
+    box-shadow: 0 1px 9px rgba(49, 49, 49, 0.137);
+    height: 6vh
+  }
+  .nav-option{
+    font-size: 1.5em;
   }
   .label{
     font-size: 7em;
@@ -173,15 +206,18 @@ a{
   .about{
     width: 75%;
     margin-left: 12.5%;
+    line-height: 1.5;
+    height: 100%;
   }
   .skills{
     margin-bottom: 12vh;
   }
   .skill-icon{
-    margin: 0 0 24vh 1.5vw;
+    margin: 0 0 10vh 1.5vw;
   }
   .skillz{
     padding-left: 25px;
+    text-align: left;
   }
   .mailer-container{
     width: 35%;
@@ -201,20 +237,18 @@ a{
   #email{
     text-align: left;
     font-size: 3vh;
-  }
-  .pic-me{
-    width: 20vh;
+    padding-left: 4vw;
+    margin: 0;
+    color:;
   }
   .project{
-    background: #1f232eda;
+    background: #2e2e2e2d;
     transition: 250ms
   }
   .project:hover{
     transform: scale(1.2);
     background: #1f232e60;
   }
-  
-  
   .nav-option:hover{
     cursor: pointer;
     color: lightgray;
@@ -222,6 +256,9 @@ a{
   .footer-img{
     height: 9vh;
     padding-left: 3vw;
+    margin: 2%;
   }
-
+  .pic-me {
+    height: 350px;
+  }
 }
