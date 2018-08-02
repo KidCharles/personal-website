@@ -12,7 +12,8 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "react-scrollable-anchor": "^0.6.1"
+    "react-scrollable-anchor": "^0.6.1",
+    "surge": "^0.20.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +22,5 @@
     "eject": "react-scripts eject"
   },
   "main": "server/index.js",
-  "proxy": "http://localhost:3040"
+  "proxy": "http://localhost:3120"
 }
