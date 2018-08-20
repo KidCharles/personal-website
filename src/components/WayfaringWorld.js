@@ -17,7 +17,7 @@ I worked with a social media influencer who wanted a website to take his busines
 
 I designed all brand assets, logos and video content in Adobe Illustrator, Photoshop, Adobe Premiere and Adobe After Effects. 
 
-I utilized React to create the front-end framework of WayfaringWorld. With the use of React, Redux, and Javascript I was able to create a fully functional e-commerce sight, where people could login, add products from a store to a cart, and purchase those items. 
+I utilized React to create the front-end framework of WayfaringWorld. With the use of React, Redux, and Javascript I was able to create a fully functional e-commerce site, where people could login, add products from a store to a cart, and purchase those items. 
 
 Through the implementation of Node.js and Express on the back-end for handling all of the RESTful API requests and connecting to cloud-based PostgresSql databases so that product, and user information could be stored. 
 
@@ -28,7 +28,7 @@ By accessing the Instagram API, we were able to get and display up to date photo
 User experience is as high priority as functionality for me while designing a website. The design and look of the website was accomplished through the HTML, CSS, and the ADOBE SUITE. I wanted the branding to feel thought out and complete which was accomplished with the ability to edit and create my own button, and icons in ADOBE ILLUSTRATOR. The little touches and over all sleek and easy to navigate appearance of the site was also offered on mobile devices with the the use of media queries.
 
                 <br/><br/><a href='https://github.com/KidCharles/ww-personal-project'>Github Repo</a>
-                <br/><br/><a href='https://Wafaringworld.net/'>Wayfaring World life site</a></p>
+                <br/><br/><a href='https://Wayfaringworld.net/'>Wayfaring World life site</a></p>
                 <p className='text about' id='project-info'> <br/> <br/><a href='https://github.com/KidCharles/ww-personal-project'>Github Repo</a></p>
                    <img className='project-preview' src={ww1} alt='home page' />
                    <img className='project-preview' src={ww2} alt='home page' />

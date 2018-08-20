@@ -41,7 +41,7 @@ class Home extends Component {
           <p className='text charles' >CHARLES HATCH</p>
           <p className='title text' >WEB DEVELOPER | GRAPHIC DESIGNER</p>
           <div className='intro'>
-            <p className='text about'>Hi, My name is Charles Hatch. I'm a Web Developer with a love for Design. I'm passionate about learning how to create things. I believe in always imporving form and function.
+            <p className='text about'>Hi, My name is Charles Hatch. I'm a Web Developer with a love for Design. I'm passionate about learning how to create things. I believe in always improving form and function.
             <br/>
             <br/>
              I fell in love with Web Development after years of a career in Graphic Design. It felt natural to move from designing a brand for a company to builing a brand for a company.  When I'm not coding, I enjoy travelling, filming, photography, Djing music, drawing, painting, and telling stories. I love to create. 
