@@ -14,6 +14,9 @@
   color: rgba(34, 34, 34, 0.664);
   letter-spacing: .1em;
 }
+#whiteText{
+  color:#FFF; 
+}
 a{
   text-decoration: none;
   display: flex;
