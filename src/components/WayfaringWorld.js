@@ -46,9 +46,12 @@ export default class extends Component {
           </p>
           <p className="text about" id="project-info">
             {" "}
-            <br /> <br />
             <a href="https://github.com/KidCharles/ww-personal-project">
               Github Repo
+            </a>
+            <br /> <br />
+            <a href="https://wayfaringworld.net">
+              Click here to visit the live site!
             </a>
           </p>
           <img className="project-preview" src={ww1} alt="home page" />
